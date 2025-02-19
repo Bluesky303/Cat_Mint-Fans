@@ -12,6 +12,8 @@ body {
 }
 
 /* 顶部导航栏样式 */
+
+/*左上角*/
 header {
   background-color: #000;
   display: flex;
@@ -25,21 +27,24 @@ header {
   color: red;
 }
 
+/*右上角*/
 .top-right-links {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
+  grid-template-columns: repeat(3, auto);
+  color: red;
+  justify-content: space-between;
+  align-items: center; 
+}
+.top-right-links a {
+  color: red;
 }
 
-.top-right-links a {
-  grid-row: 1;
+
+nav a{
+  grid-template-columns: 1/3;
   color: red;
   text-decoration: none;
-}
-
-nav a {
-  columns: 1;
-  text-decoration: none;
+  padding: 10px;
 }
 
 /* 侧边栏样式 */
