@@ -1,0 +1,42 @@
+/* 全局样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: #fff;
+}
+
+/* 顶部导航栏样式 */
+header {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 24px;
+  color: red;
+}
+
+.top-right-links {
+  display: flex;
+  align-items: center;
+}
+
+.top-right-links a {
+  color: red;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+nav a {
+  margin-left: 15px;
+}
+
