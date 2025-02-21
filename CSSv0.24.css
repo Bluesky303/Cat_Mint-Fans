@@ -303,6 +303,14 @@ aside {
   object-fit: cover;
 }
 
+.newsPhoto-box {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  /* border: 1px solid white; */
+  /* 注释的代码用于查看div的边界 */
+}
+
 @keyframes slide {
   0% {
     transform: translateX(0);
