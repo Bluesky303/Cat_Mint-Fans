@@ -7,13 +7,18 @@
 /* 字体设置 */
 @font-face {
   font-family: 'SourceHanSansSC-Regular';
-  src: url('../fonts/SourceHanSansSC-Regular-2.otf');  
+  src: url('../fonts/SourceHanSansSC-Regular-2.otf') format('opentype');  
+}
+
+@font-face {
+  font-family: 'Cambria-Math';
+  src: url('../fonts/cambria-math.ttf') format('truetype');  
 }
 
 body {
-  font-family: 'SourceHanSansSC-Regular';
-  background-color: #000;
-  color: #fff;
+  font-family: 'Cambria Math', 'SourceHanSansSC-Regular';
+  background-color: black;
+  color: white;
 }
 
 /* 顶部导航栏样式 */
@@ -29,7 +34,7 @@ header {
   display: block;
   width: 100%;
   height: 3px;
-  background-color: #FF0000;
+  background-color: red;
 }
 
 .header-text{
@@ -137,36 +142,51 @@ aside {
 .hero-section {
   margin-left: auto;
   margin-right: auto;
-  height: 300px;
+  height: 500px;
   width: 100%;
   align-content: center;
   text-align: center;
-  margin-bottom: 50px;
+  padding-bottom: 40px;
   font-size: 24px;
   background-color: #979797;
 }
+
+.hero-section h1 {
+  font-size: 48px;
+  font-weight: normal;
+  color: white
+}
+
+
 /* 高效办事区域样式 */
 .efficient-service-section {
-  padding: 50px 20px;
+  padding: 30px 20px 50px;
   text-align: center;
 }
 
 .efficient-service-section h2 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #fff;
+  font-size: 36px;
+  font-weight: normal;
+  color: white
+  padding-bottom: 20px;
+}
+
+.efficient-service-section p {
+  font-size: 16px;
+  color: white
   margin-bottom: 20px;
 }
 
 .service-categories {
-  max-width: 1000px;
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #333;
-  padding: 10px;
+  background-color: #242424;
+  padding: 15px;
   margin-bottom: 20px;
   display: flex;
   justify-content: space-around;
+  font-size: 18px;
 }
 
 .service-categories span {
@@ -174,22 +194,33 @@ aside {
 }
 
 .service-lists {
-  max-width: 1000px;
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   justify-content: space-around;
+  background-color: #242424;
 }
 
 .service-list {
-  max-width: 200px;
+  max-width: 300px;
+  margin-top: 30px;
   width: 23%;
   text-align: left;
 }
 
 .service-list h3 {
   color: red;
-  margin-bottom: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #707070;
+}
+
+.bottom-red-line {
+  width: 50%;
+  height: 3px;
+  position: relative;
+  top: -2px;
+  background-color: red;
 }
 
 .service-list ul {
@@ -198,38 +229,41 @@ aside {
 
 .service-list ul li {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid #707070;
+}
+
+/*只能包个盒子了*/
+.number-box {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  margin: 10px 10px;
 }
 
 .number {
+  font-size: 24px;
+  margin: auto;
   color: white;
-  height: 20px;
-  width: 10px;
-  margin: 10px;
-  align-items: center;
-  justify-content: center;
-  background-color: red;
 }
 
 
 .logo-item {
+  font-size: 24px;
   color: red;
-  margin-right: 10px;
-  margin-top: 10px;
+  margin: 10px 10px;
 }
 
 .service-desc {
   display: block;
-  
   line-height: 1.4;
   font-size: small;
 }
 
 .service-content {
-  font-size: smaller;
+  font-size: 8px;
 }
 
 /* 要闻专栏区域样式 */
@@ -250,7 +284,7 @@ aside {
 .section-title {
   font-size: 24px;
   font-weight: bold;
-  color: #fff;
+  color: white;
   margin-bottom: 20px;
   text-align: left;
 }
@@ -279,8 +313,6 @@ aside {
   padding: 20px;
   background-color: #1a1a1a;
   border-radius: 8px;
-
-
 }
 
 .photo-slider {
@@ -301,14 +333,6 @@ aside {
   width: 33.3333%; /* 假设3张照片 */
   height: 100%;
   object-fit: cover;
-}
-
-.newsPhoto-box {
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  /* border: 1px solid white; */
-  /* 注释的代码用于查看div的边界 */
 }
 
 @keyframes slide {
@@ -452,6 +476,7 @@ aside {
   max-width: 2000px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
   text-align: center;
 }
 
