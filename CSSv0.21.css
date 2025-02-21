@@ -1,0 +1,422 @@
+/* 全局样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* 顶部导航栏样式 */
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-belt {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #FF0000;
+}
+
+.header-text{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  background-color: #242424;
+}
+
+.header-text *{
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+/*左上角*/
+
+.logo {
+  color: red;
+  font-size: 18px;
+}
+
+.header-title {
+  font-size: 18px;
+}
+
+
+/*右上角*/
+.top-right-links {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-right-links *{
+  display: flex;
+  align-items: center;
+  color: red;
+  text-decoration: none;
+}
+
+.login-links{
+  height: 30px;
+
+  margin-bottom: 5px;
+  margin-left: auto;
+}
+
+.login-links *{
+  padding: 5px;
+  font-size: 12px;
+}
+
+.nav-links {  
+  display: flex;
+  height: 20px;
+  width: 100%;
+  padding: 10px; 
+  font-size: 16px;
+}
+/* 侧边栏样式 */
+aside {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: transparent;
+}
+
+.sidebar-button {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 5px;
+  margin-bottom: 2px;
+  width: 100%; 
+  cursor: pointer;
+  border: 1px solid transparent;
+  color: red;
+  font-size: 12px;
+  background-color: #242424;
+}
+
+.sidebar-button-text{
+  height: 10px;
+  margin: auto
+}
+/*主要内容*/
+
+/*欢迎区域样式*/
+.hero-section {
+  height: 300px;
+  width: 100%;
+  align-content: center;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 24px;
+  background-color: #979797;
+}
+/* 高效办事区域样式 */
+.efficient-service-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.service-categories {
+  background-color: #333;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.service-categories span {
+  cursor: pointer;
+}
+
+.service-lists {
+  display: flex;
+  justify-content: space-around;
+}
+
+.service-list {
+  width: 23%;
+  text-align: left;
+}
+
+.service-list h3 {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.service-list ul {
+  list-style-type: none;
+}
+
+.service-list ul li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #444;
+}
+
+.number {
+  color: red;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.logo-item {
+  color: red;
+  margin-right: 10px;
+}
+
+.service-desc {
+  line-height: 1.4;
+}
+
+/* 要闻专栏区域样式 */
+.news-column-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.news-banner {
+  height: 200px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-box{
+  width: 64%;
+  text-align: left;
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+
+
+}
+.photo-slider {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+}
+
+.slider-wrapper {
+  display: flex;
+  width: 300%; /* 假设3张照片 */
+  animation: slide 15s infinite; /* 动画效果 */
+}
+
+.slider-img {
+  width: 33.3333%; /* 假设3张照片 */
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-33.3333%);
+  }
+  66% {
+    transform: translateX(-66.6666%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.photo-title {
+  width: 102%;
+  height: 125px;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.title-text {
+  color: #fff;
+  font-size: 16px;
+}
+
+.news-list {
+  width: 35%;
+  text-align: left;
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+}
+
+.news-list-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #444;
+  padding-bottom: 5px;
+}
+
+.news-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.news-item {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #333;
+  display: flex;
+  align-items: center;
+}
+
+.news-date {
+  color: #999;
+  font-size: 14px;
+  margin-right: 15px;
+  min-width: 80px;
+}
+
+.news-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.news-link:hover {
+  color: #ff0000;
+}
+/* 信息公开区域样式 */
+.information-disclosure-section {
+  padding: 50px 20px;
+}
+
+.section-title {
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .section-title-1{
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+.policy-interpretation {
+  display: flex;
+}
+
+.show-sth{
+  width: 50%;
+  text-align: left;
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+
+}
+.policy-box-first{
+  background-color: #666;
+  margin-right: 8px;
+  margin-left: 30px;
+}
+
+.policy-box {
+  background-color: #666;
+  margin-right: 10px;
+}
+
+.policy-box.big {
+  width: 95%;
+  height: 290px;
+}
+
+.policy-box:not(.big) {
+  width: 10.5%;
+  height: 380px;
+}
+
+/* 特色栏目区域样式 */
+.feature-section {
+  text-align: center;
+}
+
+/* 用于包裹特色栏目模块的容器样式 */
+.feature-modules {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.feature-item {
+  background-color: #333;
+  width: 23%;
+  height: 150px;
+}
+
+/* 服务统计区域样式 */
+.service-statistics-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.statistic-item {
+  display: inline-block;
+  width: 48%;
+  margin-bottom: 30px;
+}
+
+.statistic-number {
+  font-size: 30px;
+  color: red;
+}
+
+/* 底部样式 */
+footer {
+  margin-top: 30px;
+  text-align: center;
+  /* ????????我喜欢你你喜欢我哇奥！！！！！！！！！*/
+}
