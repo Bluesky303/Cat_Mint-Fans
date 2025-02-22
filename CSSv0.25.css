@@ -23,7 +23,6 @@ body {
 
 /* 顶部导航栏样式 */
 header {
-  
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -54,8 +53,9 @@ header {
 /*左上角*/
 
 .logo {
+  padding-left: 60px;
   color: red;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .header-title {
@@ -98,6 +98,7 @@ header {
 }
 /* 侧边栏样式 */
 aside {
+  z-index: 1;
   position: fixed;
   right: 0;
   top: 0;
@@ -157,6 +158,9 @@ aside {
   color: white
 }
 
+.hero-section p {
+  font-size: 18px;
+}
 
 /* 高效办事区域样式 */
 .efficient-service-section {
@@ -167,13 +171,13 @@ aside {
 .efficient-service-section h2 {
   font-size: 36px;
   font-weight: normal;
-  color: white
+  color: white;
   padding-bottom: 20px;
 }
 
 .efficient-service-section p {
   font-size: 16px;
-  color: white
+  color: white;
   margin-bottom: 20px;
 }
 
@@ -234,7 +238,6 @@ aside {
   border-bottom: 1px solid #707070;
 }
 
-/*只能包个盒子了*/
 .number-box {
   display: flex;
   width: 30px;
@@ -275,18 +278,32 @@ aside {
   text-align: center;
 }
 
-.news-background {
-  border-color: #242424; 
-  background-color :#242424;
-  border-style:solid; 
-}
-
 .section-title {
-  font-size: 24px;
-  font-weight: bold;
+  display: grid;
+  grid-template-columns: minmax(50px, 1fr) auto minmax(50px, 1fr);;
+  padding: 30px;
+  font-size: 36px;
+  font-weight: normal;
   color: white;
   margin-bottom: 20px;
-  text-align: left;
+  text-align: center;
+  align-items: center;
+}
+
+.section-title::before {
+  content: '';
+  height: 1px;
+  width: 95%;
+  background-color: #383838
+}
+
+.section-title::after {
+  content: '';
+  position: relative;
+  left: 5%;
+  width: 95%;
+  height: 1px;
+  background-color: #383838
 }
 
 .news-banner {
@@ -294,6 +311,7 @@ aside {
   overflow: hidden;
   margin-bottom: 30px;
   border-radius: 8px;
+  background-color: #242424;
 }
 
 .banner-img {
@@ -311,13 +329,13 @@ aside {
   width: 64%;
   text-align: left;
   padding: 20px;
-  background-color: #1a1a1a;
+  background-color: #242424;
   border-radius: 8px;
 }
 
 .photo-slider {
-  width: 60%;
-  height: 220px;
+  width: 620%;
+  height: 400px;
   overflow: hidden;
   position: relative;
   border-radius: 8px;
@@ -327,6 +345,7 @@ aside {
   display: flex;
   width: 300%; /* 假设3张照片 */
   animation: slide 15s infinite; /* 动画效果 */
+  background-color: #242424;
 }
 
 .slider-img {
@@ -351,14 +370,14 @@ aside {
 }
 
 .photo-title {
-  width: 60%;
-  height: 40px;
-  background-color: rgba(0, 0, 0, 0.7);
+  width: 620%;
+  height: 47px;
   margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 4px;
+  background-color: #242424;
 }
 
 .title-text {
@@ -367,10 +386,10 @@ aside {
 }
 
 .news-list {
-  width: 35%;
+  width: 50%;
   text-align: left;
   padding: 20px;
-  background-color: #1a1a1a;
+  background-color: #242424;
   border-radius: 8px;
 }
 
@@ -422,21 +441,14 @@ aside {
   padding: 50px 20px;
 }
 
-.section-title {
-    font-size: 35px;
-    font-weight: bold;
-    color: #fff;
-    margin-bottom: 20px;
-    text-align: center;
-  }
   
-  .section-title-1{
-    font-size: 24px;
-    font-weight: bold;
-    color: #fff;
-    margin-bottom: 20px;
-    text-align: left;
-  }
+.section-title-1{
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+  text-align: left;
+}
 
 .policy-interpretation {
   display: flex;
@@ -446,27 +458,24 @@ aside {
   width: 50%;
   text-align: left;
   padding: 20px;
-  background-color: #1a1a1a;
+  background-color: #242424;
   border-radius: 8px;
 
 }
 .policy-box-first{
-  background-color: #666;
   margin-right: 8px;
   margin-left: 30px;
 }
 
-.policy-box {
-  background-color: #666;
-  margin-right: 10px;
-}
-
-.policy-box.big {
+.interpretation-box {
   width: 95%;
-  height: 290px;
+  height: 75%;
+  background-color: #323232;
 }
 
-.policy-box:not(.big) {
+.policy-box {
+  background-color: #242424;
+  margin-right: 10px;
   width: 10.5%;
   height: 380px;
 }
@@ -477,6 +486,7 @@ aside {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
+  padding: 50px 20px;
   text-align: center;
 }
 
@@ -488,7 +498,7 @@ aside {
 }
 
 .feature-item {
-  background-color: #333;
+  background-color: #242424;
   width: 23%;
   height: 150px;
 }
@@ -504,8 +514,18 @@ aside {
   background-color: #141414;
 }
 
+.service-statistics-section h2 {
+  font-size: 48px;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+
 .statistic-items {
   display: flex;
+}
+
+.statistic-box {
+  width: 10%
 }
 
 .statistic-item {
@@ -517,12 +537,12 @@ aside {
 
 .statistic-number {
   margin-bottom: 30px;
-  font-size: 60px;
+  font-size: 80px;
   color: red;
 }
 
 .vertical-line {
-  border-left: 1px solid #444;
+  border-left: 1px solid #424242;
   height: 135px;
   margin: 20px 20px;
 }
