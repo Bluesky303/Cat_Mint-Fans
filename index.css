@@ -7,12 +7,12 @@
 /* 字体设置 */
 @font-face {
   font-family: 'SourceHanSansSC-Regular';
-  src: url('../fonts/SourceHanSansSC-Regular-2.otf') format('opentype');  
+  src: url('./fonts/SourceHanSansSC-Regular-2.otf') format('opentype');  
 }
 
 @font-face {
   font-family: 'Cambria-Math';
-  src: url('../fonts/cambria-math.ttf') format('truetype');  
+  src: url('./fonts/cambria-math.ttf') format('truetype');  
 }
 
 body {
@@ -140,6 +140,8 @@ aside {
 /*主要内容*/
 
 /*欢迎区域样式*/
+
+
 .hero-section {
   margin-left: auto;
   margin-right: auto;
@@ -149,7 +151,7 @@ aside {
   text-align: center;
   padding-bottom: 40px;
   font-size: 24px;
-  background-image: url("../pic/IMG_0001.jpg");
+  background-image: url("./pic/IMG_0001.jpg");
   background-size: cover;
   background-position-y: center;
 }
