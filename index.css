@@ -79,23 +79,33 @@ header {
 
 .login-links{
   height: 30px;
-
   margin-bottom: 5px;
-  margin-left: auto;
 }
 
 .login-links *{
   padding: 5px;
   font-size: 12px;
+  border-radius: 8px;
 }
 
 .nav-links {  
   display: flex;
+  justify-content: center;
   height: 20px;
   width: 100%;
-  padding: 10px; 
+  margin: 15px; 
   font-size: 16px;
 }
+.nav-links a {
+  border-radius: 8px;
+}
+
+.login-links a:hover, .login-links nav a:hover, .nav-links a:hover {
+  z-index: 1;
+  color: white;
+  background-color: red;
+}
+
 /* 侧边栏样式 */
 aside {
   z-index: 1;
@@ -123,7 +133,9 @@ aside {
   color: red;
   font-size: 12px;
   background-color: #242424;
+  transition: all 0.3s;
 }
+
 
 .sidebar-button-text {
   height: 10px;
@@ -201,17 +213,25 @@ aside {
 .service-categories {
   max-width: 1400px;
   margin-left: auto;
-  margin-right: auto;
-  background-color: #242424;
-  padding: 15px;
+  margin-right: auto;  
   margin-bottom: 20px;
   display: flex;
   justify-content: space-around;
   font-size: 18px;
+  background-color: #242424;
+  border-radius: 8px;
 }
 
 .service-categories span {
+  padding: 15px;
+  align-self: stretch;
   cursor: pointer;
+  background-color: #242424;
+  border-radius: 8px;
+}
+
+.service-categories span:hover {
+  background-color: red;
 }
 
 .service-lists {
@@ -221,6 +241,10 @@ aside {
   display: flex;
   justify-content: space-around;
   background-color: #242424;
+}
+
+.service-list ul li:hover {
+  background-color: #323232;
 }
 
 .service-list {
@@ -267,6 +291,7 @@ aside {
   font-size: 24px;
   margin: auto;
   color: white;
+  cursor: pointer;
 }
 
 
@@ -274,12 +299,14 @@ aside {
   font-size: 24px;
   color: red;
   margin: 10px 10px;
+  cursor: pointer;
 }
 
 .service-desc {
   display: block;
   line-height: 1.4;
   font-size: small;
+  cursor: pointer;
 }
 
 .service-content {
@@ -346,6 +373,8 @@ aside {
   width: 64%;
   text-align: left;
   padding: 20px;
+  padding-top: 60px;
+  overflow: hidden;
   background-color: #242424;
   border-radius: 8px;
 }
@@ -353,7 +382,6 @@ aside {
 .photo-slider {
   width: auto;
   height: 400px;
-  overflow: hidden;
   position: relative;
   border-radius: 8px;
 }
@@ -369,12 +397,16 @@ aside {
   justify-content: center;
   width: 33.3333333%; /* 假设3张照片 */
   height: 400px;
-  object-fit: cover;
 }
 
 .slider-img {
   height: 100%;
   width: auto;
+  transition: all 0.5s ease;
+}
+
+.slider-img:hover {
+  transform: scale(1.3);
 }
 
 @keyframes slide {
