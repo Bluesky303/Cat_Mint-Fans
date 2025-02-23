@@ -15,6 +15,48 @@
   src: url('./fonts/cambria-math.ttf') format('truetype');  
 }
 
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes h-showup {
+  0% {
+    opacity: 0;
+    translate: -100px;
+  }
+  100% {
+    opacity: 1;
+    translate: 0px;
+  }
+}
+
+@keyframes v-showup {
+  0% {
+    opacity: 0;
+    translate: 0 -50px;
+  }
+  100% {
+    opacity: 1;
+    translate: 0px;
+  }
+}
+
+@keyframes sidebar-button-showup {
+  0% {
+    opacity: 0;
+    translate: 50px;
+  }
+  100% {
+    opacity: 1;
+    translate: 0px;
+  }
+}
+
 body {
   font-family: 'Cambria Math', 'SourceHanSansSC-Regular';
   background-color: black;
@@ -48,6 +90,7 @@ header {
   padding: 10px 20px;
   display: flex;
   align-items: center;
+  animation: showup 2s ease-in-out;
 }
 
 /*左上角*/
@@ -119,6 +162,7 @@ aside {
   align-items: center;
   padding: 20px;
   background-color: transparent;
+  animation: sidebar-button-showup 2s ease-in-out;
 }
 
 .sidebar-button {
@@ -170,23 +214,12 @@ display: none;
   background-size: cover;
   background-image: url("./pic/IMG_0001.jpg");
   background-position-y: center;
-  animation: showup 2s;
+  animation: h-showup 2s ease-in-out;
 }
 
 .hero-section h1 , .hero-section p {
   background-color: rgba(0, 0, 0, 0.5);
 } 
-
-@keyframes showup {
-  0% {
-    opacity: 0;
-    translate: -100px;
-  }
-  100% {
-    opacity: 1;
-    translate: 0px;
-  }
-}
 
 .hero-section h1 {
   font-size: 48px;
@@ -205,7 +238,11 @@ display: none;
 .efficient-service-section {
   padding: 30px 20px 50px;
   text-align: center;
+  animation: v-showup 2s ease-in-out;
 }
+
+
+
 
 .efficient-service-section h2 {
   font-size: 36px;
