@@ -136,6 +136,10 @@ aside {
   transition: all 0.3s;
 }
 
+#sidebar-gotop {
+display: none;
+}
+
 
 .sidebar-button-text {
   height: 10px;
@@ -167,6 +171,7 @@ aside {
   background-size: cover;
   background-position-y: center;
   animation: showup 1s;
+  cursor :none;
 }
 
 @keyframes showup {
@@ -356,6 +361,7 @@ aside {
   margin-bottom: 30px;
   border-radius: 8px;
   background-color: #242424;
+  cursor:none;
 }
 
 .banner-img {
@@ -397,6 +403,7 @@ aside {
   justify-content: center;
   width: 33.3333333%; /* 假设3张照片 */
   height: 400px;
+  cursor: none;
 }
 
 .slider-img {
