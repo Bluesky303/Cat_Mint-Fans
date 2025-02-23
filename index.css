@@ -167,19 +167,24 @@ display: none;
   text-align: center;
   padding-bottom: 40px;
   font-size: 24px;
-  background-image: url("./pic/IMG_0001.jpg");
   background-size: cover;
+  background-image: url("./pic/IMG_0001.jpg");
   background-position-y: center;
-  animation: showup 1s;
-  cursor :none;
+  animation: showup 2s;
 }
 
+.hero-section h1 , .hero-section p {
+  background-color: rgba(0, 0, 0, 0.5);
+} 
+
 @keyframes showup {
-  from {
-    transform: scaleY(0);
+  0% {
+    opacity: 0;
+    translate: -100px;
   }
-  to {
-    transform: scale(1);
+  100% {
+    opacity: 1;
+    translate: 0px;
   }
 }
 
@@ -361,7 +366,6 @@ display: none;
   margin-bottom: 30px;
   border-radius: 8px;
   background-color: #242424;
-  cursor:none;
 }
 
 .banner-img {
@@ -403,7 +407,6 @@ display: none;
   justify-content: center;
   width: 33.3333333%; /* 假设3张照片 */
   height: 400px;
-  cursor: none;
 }
 
 .slider-img {
