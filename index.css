@@ -125,12 +125,12 @@ aside {
   background-color: #242424;
 }
 
-.sidebar-button-text{
+.sidebar-button-text {
   height: 10px;
   margin-top: 5px;
 }
 
-.OA-LOGO{
+.OA-LOGO {
   height: 30px;
   width: 30px;
   margin-right: 10px;
@@ -154,6 +154,16 @@ aside {
   background-image: url("./pic/IMG_0001.jpg");
   background-size: cover;
   background-position-y: center;
+  animation: showup 1s;
+}
+
+@keyframes showup {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 .hero-section h1 {
