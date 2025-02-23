@@ -402,21 +402,27 @@ aside {
 .slider-img {
   height: 100%;
   width: auto;
-  transition: all 0.5s ease;
-}
-
-.slider-img:hover {
-  transform: scale(1.3);
+  transition: all 0.1s ease;
+  box-shadow: 10px 10px 10px white;
 }
 
 @keyframes slide {
   0% {
     transform: translateX(0);
   }
+  22% {
+    transform: translateX(0);
+  }
   33% {
     transform: translateX(-33.3333%);
   }
+  55% {
+    transform: translateX(-33.3333%);
+  }
   66% {
+    transform: translateX(-66.6666%);
+  }
+  88% {
     transform: translateX(-66.6666%);
   }
   100% {
