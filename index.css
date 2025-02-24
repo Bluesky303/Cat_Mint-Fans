@@ -57,6 +57,10 @@
   }
 }
 
+#v-show {
+  animation: v-showup 1s ease-in-out;
+}
+
 body {
   font-family: 'Cambria Math', 'SourceHanSansSC-Regular';
   background-color: black;
@@ -203,6 +207,7 @@ display: none;
 
 
 .hero-section {
+  max-width: 2000px;
   margin-left: auto;
   margin-right: auto;
   height: 500px;
@@ -238,11 +243,7 @@ display: none;
 .efficient-service-section {
   padding: 30px 20px 50px;
   text-align: center;
-  animation: v-showup 2s ease-in-out;
 }
-
-
-
 
 .efficient-service-section h2 {
   font-size: 36px;
