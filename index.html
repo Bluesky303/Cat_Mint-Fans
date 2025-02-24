@@ -37,7 +37,7 @@
 
   <!-- 侧边栏 -->
   <aside>
-    <button class="sidebar-button">
+    <button class="sidebar-button" id="top-button">
       <svg t="1740139876802" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1502" width="30" height="30"><path d="M800.037628 960.010751 223.962372 960.010751c-52.980346 0-95.983874-43.003528-95.983874-95.983874l0-639.892491c0-52.980346 43.003528-95.983874 95.983874-95.983874l447.924744 0c17.717453 0 31.994625 14.277171 31.994625 31.994625s-14.277171 31.994625-31.994625 31.994625L223.962372 192.139761c-17.545439 0-31.994625 14.449185-31.994625 31.994625l0 639.892491c0 17.717453 14.449185 31.994625 31.994625 31.994625l575.903242 0c17.717453 0 31.994625-14.277171 31.994625-31.994625L831.860239 351.94087c0-17.717453 14.277171-31.994625 31.994625-31.994625 17.717453 0 31.994625 14.277171 31.994625 31.994625l0 511.913993C896.021502 916.835209 852.84596 960.010751 800.037628 960.010751z" fill="#ffffff" p-id="1503"></path><path d="M612.026205 447.924744c-8.256677 0-16.341341-3.096254-22.705863-9.460776-12.55703-12.55703-12.55703-32.682681 0-45.239711L907.374433 75.34218c12.55703-12.55703 32.682681-12.55703 45.239711 0s12.55703 32.682681 0 45.239711L634.560054 438.635982C628.367546 444.82849 620.110868 447.924744 612.026205 447.924744z" fill="#ffffff" p-id="1504"></path><path d="M479.919368 447.924744 287.951621 447.924744c-17.717453 0-31.994625-14.277171-31.994625-31.994625s14.277171-31.994625 31.994625-31.994625L479.919368 383.935495c17.717453 0 31.994625 14.277171 31.994625 31.994625C511.913993 433.647573 497.636822 447.924744 479.919368 447.924744z" fill="#ffffff" p-id="1505"></path><path d="M672.05913 639.892491 287.951621 639.892491c-17.717453 0-31.994625-14.277171-31.994625-31.994625s14.277171-31.994625 31.994625-31.994625l383.935495 0c17.717453 0 31.994625 14.277171 31.994625 31.994625S689.604569 639.892491 672.05913 639.892491z" fill="#ffffff" p-id="1506"></path></svg>
       <div class="sidebar-button-text">使用反馈</div>
     </button>
@@ -65,11 +65,12 @@
       <div class="OA-LOGO"><b>OA</b></div>
       <div class="sidebar-button-text">内部办公</div>
     </button>
+    <button class="sidebar-button" id="collapse-button">
+      <div class="sidebar-collapse-text"><span style="color:white; font-size: large;">></span>&nbsp;收起</div>
+    </button>
     <button class="sidebar-button" id="sidebar-gotop" data-type="gotop">
-      <svg id="gotop-svg" width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3z" fill="#ffffff"/>
-      </svg>
-      <div class="gotop-text">回到顶部</div>
+      <svg id="gotop-svg" width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3z" fill="#ffffff"/></svg>
+      <div class="sidebar-button-text">回到顶部</div>
     </button>
   </aside>
 
@@ -289,7 +290,9 @@
           <img src="./pic/IMG_0001.jpg" alt="横幅海报" class="banner-img">
         </div>
         <div class="news-content">
+
           <div class="newsPhoto-box">
+
             <div class="photo-slider">
               <div class="slider-wrapper">
                 <div class="img-box">
@@ -304,10 +307,19 @@
                 <!-- 可按需添加更多照片 -->
               </div>
             </div>
+
+            <ul>
+              <li class="img-index"></li>
+              <li class="img-index"></li>
+              <li class="img-index"></li>
+            </ul>
+
             <div class="photo-title">
               <span class="title-text">这是一只猫</span>
             </div>
+            
           </div>
+
           <div class="news-list">
             <h3 class="news-list-title">要闻</h3>
             <ul class="news-items">
@@ -410,7 +422,6 @@
   </main>
 
   <script type="text/javascript" src="index.js"></script>
-  <script src="gotop.js"></script>
 </body>
 
 </html>

@@ -46,17 +46,6 @@
   }
 }
 
-@keyframes sidebar-button-showup {
-  0% {
-    opacity: 0;
-    translate: 50px;
-  }
-  100% {
-    opacity: 1;
-    translate: 0px;
-  }
-}
-
 #v-show {
   animation: v-showup 1s ease-in-out;
 }
@@ -159,6 +148,7 @@ aside {
   position: fixed;
   right: 0;
   top: 0;
+  margin-top: auto;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -166,7 +156,31 @@ aside {
   align-items: center;
   padding: 20px;
   background-color: transparent;
-  animation: sidebar-button-showup 2s ease-in-out;
+  animation: sidebar-button-showup 0.5s ease-in-out;
+}
+
+#aside-collapsed {
+  animation: sidebar-button-collapse 0.5s ease-in-out;
+  translate: 100px;
+}
+
+/* 侧边栏展开收起 */
+@keyframes sidebar-button-showup {
+  0% {
+    translate: 100px;
+  }
+  100% {
+    translate: 0px;
+  }
+}
+
+@keyframes sidebar-button-collapse {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: 100px;
+  }
 }
 
 .sidebar-button {
@@ -184,10 +198,20 @@ aside {
   transition: all 0.3s;
 }
 
-#sidebar-gotop {
-display: none;
+#top-button {
+  margin-top: auto;
 }
 
+#collapse-button {
+  display: flex;
+  align-items: center;
+  margin-bottom: auto;
+}
+
+#sidebar-gotop {
+  margin-top: auto;
+  display: none;
+}
 
 .sidebar-button-text {
   height: 10px;
@@ -476,6 +500,24 @@ display: none;
   100% {
     transform: translateX(0);
   }
+}
+
+.newsPhoto-box ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.img-index {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 5px;
+  cursor: pointer;
 }
 
 .photo-title {
