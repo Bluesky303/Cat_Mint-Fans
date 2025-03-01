@@ -11,16 +11,49 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  transform-style: preserve-3d;
+}
+
+.canvas {
+  height: 700px;
+  width: 700px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: grab;
 }
 
 .container {
   text-align: center;
+  position: absolute;
+  user-select: none;
+  transform-style: preserve-3d;
+  cursor: grab;
+  -webkit-user-drag: none;
+  /* transform: rotateX(45deg) rotateY(45deg); */
+}
+
+.back {
   width: 400px;
+  height: 400px;
+  position: absolute;
+  transform: translateZ(-3px) rotateY(180deg);
+  color: aliceblue;
+  background-color: #999;
   padding: 20px;
+}
+
+.front {
+  user-select: none;
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  background-color: #999;
+  transform-style: preserve-3d;
 }
 
 .logo-title {
   margin-bottom: 30px;
+  transform: translateZ(10px);
 }
 
 .logo {
@@ -40,6 +73,7 @@ h1 {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: translateZ(21px);
 }
 
 .login-box input {
@@ -65,7 +99,7 @@ h1 {
   position: absolute;
   top: 50%;
   right: 10px;
-  transform: translateY(-50%);
+  transform: translateY(-78%);
   color: red;
   cursor: pointer;
 }
