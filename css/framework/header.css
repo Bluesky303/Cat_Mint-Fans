@@ -36,6 +36,7 @@ header {
 
 /*右上角*/
 .top-right-links {
+    z-index: 2;
     margin-left: auto;
     display: flex;
     flex-direction: column;
@@ -73,7 +74,7 @@ header {
 }
 
 .login-links a:hover, .login-links nav a:hover, .nav-links a:hover {
-    z-index: 1;
+    z-index: 3;
     color: white;
     background-color: red;
 }
