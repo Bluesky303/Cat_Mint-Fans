@@ -1,0 +1,20 @@
+{
+  "name": "cat_mint-fans",
+  "version": "1.0.0",
+  "description": "---\r ## 首页头部导航栏\r ---",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bluesky303/Cat_Mint-Fans.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bluesky303/Cat_Mint-Fans/issues"
+  },
+  "homepage": "https://github.com/Bluesky303/Cat_Mint-Fans#readme"
+}
