@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* 字体设置 */
+@font-face {
+  font-family: 'SourceHanSansSC-Regular';
+  src: url('./fonts/SourceHanSansSC-Regular-2.otf') format('opentype');  
+}
+  
+@font-face {
+  font-family: 'Cambria-Math';
+  src: url('./fonts/cambria-math.ttf') format('truetype');  
+}
+
+body {
+  font-family: 'Cambria Math', 'SourceHanSansSC-Regular';
+  background-color: black;
+  color: white;
+}
+  

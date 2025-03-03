@@ -1,0 +1,110 @@
+@import "../animation/showup.css";
+
+/* 顶部导航栏样式 */
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #242424;
+}
+
+.header-belt {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: red;
+}
+
+.header-text{
+    max-width: 2000px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+/*左上角*/
+.logo {
+    padding-left: 60px;
+    color: red;
+    font-size: 24px;
+}
+
+.header-title {
+    font-size: 18px;
+}
+
+/*右上角*/
+.top-right-links {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-links{
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.top-right-links *{
+    display: flex;
+    align-items: center;
+    color: red;
+    text-decoration: none;
+}
+
+.login-links *{
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+.nav-links {  
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    width: 100%;
+    margin: 15px; 
+    font-size: 16px;
+    }
+
+.nav-links a {
+    border-radius: 8px;
+}
+
+.login-links a:hover, .login-links nav a:hover, .nav-links a:hover {
+    z-index: 1;
+    color: white;
+    background-color: red;
+}
+
+.header-text *{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    animation: showup 2s ease-in-out;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  

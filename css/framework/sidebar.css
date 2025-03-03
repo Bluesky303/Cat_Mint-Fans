@@ -1,0 +1,83 @@
+/* 侧边栏样式 */
+aside {
+    z-index: 1;
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin-top: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+    animation: sidebar-button-showup 0.5s ease-in-out;
+}
+  
+#aside-collapsed {
+    animation: sidebar-button-collapse 0.5s ease-in-out;
+    translate: 100px;
+}
+  
+/* 侧边栏展开收起 */
+@keyframes sidebar-button-showup {
+    0% {
+      translate: 100px;
+    }
+    100% {
+      translate: 0px;
+    }
+}
+  
+@keyframes sidebar-button-collapse {
+    from {
+      translate: 0;
+    }
+    to {
+      translate: 100px;
+    }
+}
+  
+.sidebar-button {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+    margin-bottom: 2px;
+    align-items: center;
+    width: 100%; 
+    cursor: pointer;
+    border: 1px solid transparent;
+    color: red;
+    font-size: 12px;
+    background-color: #242424;
+    transition: all 0.3s;
+}
+  
+#top-button {
+    margin-top: auto;
+}
+  
+#collapse-button {
+    display: flex;
+    align-items: center;
+    margin-bottom: auto;
+}
+  
+#sidebar-gotop {
+    margin-top: auto;
+    display: none;
+}
+  
+.sidebar-button-text {
+    height: 10px;
+    margin-top: 5px;
+}
+  
+.OA-LOGO {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    font-size: 25px;
+    color: white
+}
