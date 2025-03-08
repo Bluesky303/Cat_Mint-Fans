@@ -1,21 +1,21 @@
 /* 全局样式 */
 @import './framework/base.css';
 
-@import './css/showup.css';
+@import './animation/showup.css';
 
 /*主要内容*/
 
 /*欢迎区域样式*/
 .hero-section {
-  max-width: 2000px;
+  max-width: 125rem;
   margin-left: auto;
   margin-right: auto;
-  height: 500px;
+  height: 31.25rem;
   width: 100%;
   align-content: center;
   text-align: center;
-  padding-bottom: 40px;
-  font-size: 24px;
+  padding-bottom: 2.5rem;
+  font-size: 1.5rem;
   background-size: cover;
   background-image: url("../pic/IMG_0001.jpg");
   background-position-y: center;
@@ -27,55 +27,55 @@
 } 
 
 .hero-section h1 {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: bold;
   font-weight: normal;
   color: red;
 }
 
 .hero-section p {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
   color: red;
 }
 
 /* 高效办事区域样式 */
 .efficient-service-section {
-  padding: 30px 20px 50px;
+  padding: 1.875rem 1.25rem 3.125rem;
   text-align: center;
 }
 
 .efficient-service-section h2 {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: normal;
   color: white;
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
 }
 
 .efficient-service-section p {
-  font-size: 16px;
+  font-size: 1rem;
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .service-categories {
-  max-width: 1400px;
+  max-width: 87.5rem;
   margin-left: auto;
   margin-right: auto;  
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   display: flex;
   justify-content: space-around;
-  font-size: 18px;
+  font-size: 1.125rem;
   background-color: #242424;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 
 .service-categories span {
-  padding: 15px;
+  padding: 0.9375rem;
   align-self: stretch;
   cursor: pointer;
   background-color: #242424;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 
 .service-categories span:hover {
@@ -83,7 +83,7 @@
 }
 
 .service-lists {
-  max-width: 1400px;
+  max-width: 87.5rem;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -96,23 +96,23 @@
 }
 
 .service-list {
-  max-width: 300px;
-  margin-top: 30px;
+  max-width: 18.75rem;
+  margin-top: 1.875rem;
   width: 23%;
   text-align: left;
 }
 
 .service-list h3 {
   color: red;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #707070;
+  padding-bottom: 1.25rem;
+  border-bottom: 0.0625rem solid #707070;
 }
 
 .bottom-red-line {
   width: 50%;
-  height: 3px;
+  height: 0.1875rem;
   position: relative;
-  top: -2px;
+  top: -0.125rem;
   background-color: red;
 }
 
@@ -123,20 +123,20 @@
 .service-list ul li {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #707070;
+  margin-bottom: 0.625rem;
+  border-bottom: 0.0625rem solid #707070;
 }
 
 .number-box {
   display: flex;
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
   background-color: red;
-  margin: 10px 10px;
+  margin: 0.625rem 0.625rem;
 }
 
 .number {
-  font-size: 24px;
+  font-size: 1.5rem;
   margin: auto;
   color: white;
   cursor: pointer;
@@ -144,47 +144,47 @@
 
 
 .logo-item {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: red;
-  margin: 10px 10px;
+  margin: 0.625rem 0.625rem;
   cursor: pointer;
 }
 
 .service-desc {
   display: block;
   line-height: 1.4;
-  font-size: small;
+  font-size: 0.75rem;
   cursor: pointer;
 }
 
-.service-content {
-  font-size: 8px;
+.service-name .service-content {
+  font-size: 0.5rem;
 }
 
 /* 要闻专栏区域样式 */
 .news-column-section {
-  max-width: 2000px;
+  max-width: 125rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 50px 20px;
+  padding: 3.125rem 1.25rem;
   text-align: center;
 }
 
 .section-title {
   display: grid;
-  grid-template-columns: minmax(50px, 1fr) auto minmax(50px, 1fr);;
-  padding: 30px;
-  font-size: 36px;
+  grid-template-columns: minmax(3.125rem, 1fr) auto minmax(3.125rem, 1fr);;
+  padding: 1.875rem;
+  font-size: 2.25rem;
   font-weight: normal;
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   text-align: center;
   align-items: center;
 }
 
 .section-title::before {
   content: '';
-  height: 1px;
+  height: 0.0625rem;
   width: 95%;
   background-color: #383838
 }
@@ -194,15 +194,15 @@
   position: relative;
   left: 5%;
   width: 95%;
-  height: 1px;
+  height: 0.0625rem;
   background-color: #383838
 }
 
 .news-banner {
-  height: 200px;
+  height: 12.5rem;
   overflow: hidden;
-  margin-bottom: 30px;
-  border-radius: 8px;
+  margin-bottom: 1.875rem;
+  border-radius: 0.5rem;
   background-color: #242424;
 }
 
@@ -220,18 +220,18 @@
 .newsPhoto-box{
   width: 64%;
   text-align: left;
-  padding: 20px;
-  padding-top: 60px;
+  padding: 1.25rem;
+  padding-top: 3.75rem;
   overflow: hidden;
   background-color: #242424;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 
 .photo-slider {
   width: auto;
-  height: 400px;
+  height: 25rem;
   position: relative;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 
 .slider-wrapper {
@@ -244,14 +244,14 @@
   display: flex;
   justify-content: center;
   width: 33.3333333%; /* 假设3张照片 */
-  height: 400px;
+  height: 25rem;
 }
 
 .slider-img {
   height: 100%;
   width: auto;
   transition: all 0.1s ease;
-  box-shadow: 10px 10px 10px white;
+  box-shadow: 0.625rem 0.625rem 0.625rem white;
 }
 
 @keyframes slide {
@@ -282,50 +282,50 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 80px;
-  margin-bottom: 10px;
+  margin-top: 5rem;
+  margin-bottom: 0.625rem;
   list-style: none;
 }
 
 .img-index {
-  width: 10px;
-  height: 10px;
+  width: 0.625rem;
+  height: 0.625rem;
   border-radius: 50%;
   background-color: #fff;
-  margin: 0 5px;
+  margin: 0 0.3125rem;
   cursor: pointer;
 }
 
 .photo-title {
   width: 100%;
-  height: 47px;
-  margin-top: 10px;
+  height: 2.9375rem;
+  margin-top: 0.625rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 4px;
+  border-radius: 0.25rem;
 }
 
 .title-text {
   color: #fff;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .news-list {
   width: 30%;
   text-align: left;
-  padding: 20px;
+  padding: 1.25rem;
   background-color: #242424;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 
 .news-list-title {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   color: #fff;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #444;
-  padding-bottom: 5px;
+  margin-bottom: 0.9375rem;
+  border-bottom: 0.125rem solid #444;
+  padding-bottom: 0.3125rem;
 }
 
 .news-items {
@@ -334,24 +334,24 @@
 }
 
 .news-item {
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #333;
+  margin-bottom: 0.625rem;
+  padding-bottom: 0.625rem;
+  border-bottom: 0.0625rem solid #333;
   display: flex;
   align-items: center;
 }
 
 .news-date {
   color: #999;
-  font-size: 14px;
-  margin-right: 15px;
-  min-width: 80px;
+  font-size: 0.875rem;
+  margin-right: 0.9375rem;
+  min-width: 5rem;
 }
 
 .news-link {
   color: #fff;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1rem;
   transition: color 0.3s ease;
 }
 
@@ -361,18 +361,18 @@
 
 /* 信息公开区域样式 */
 .information-disclosure-section {
-  max-width: 2000px;
+  max-width: 125rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 50px 20px;
+  padding: 3.125rem 1.25rem;
 }
 
   
 .section-title-1{
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: bold;
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   text-align: left;
 }
 
@@ -383,14 +383,14 @@
 .show-sth{
   width: 50%;
   text-align: left;
-  padding: 20px;
+  padding: 1.25rem;
   background-color: #242424;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 
 }
 .policy-box-first{
-  margin-right: 8px;
-  margin-left: 30px;
+  margin-right: 0.5rem;
+  margin-left: 1.875rem;
 }
 
 .interpretation-box {
@@ -401,18 +401,18 @@
 
 .policy-box {
   background-color: #242424;
-  margin-right: 10px;
+  margin-right: 0.625rem;
   width: 10.5%;
-  height: 380px;
+  height: 23.75rem;
 }
 
 /* 特色栏目区域样式 */
 .feature-section {
-  max-width: 2000px;
+  max-width: 125rem;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
-  padding: 50px 20px;
+  margin-bottom: 3.125rem;
+  padding: 3.125rem 1.25rem;
   text-align: center;
 }
 
@@ -420,30 +420,30 @@
 .feature-modules {
   display: flex;
   justify-content: space-around;
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .feature-item {
   background-color: #242424;
   width: 23%;
-  height: 150px;
+  height: 9.375rem;
 }
 
 /* 服务统计区域样式 */
 .service-statistics-section {
-  max-width: 2000px;
+  max-width: 125rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 50px 20px;
+  padding: 3.125rem 1.25rem;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125rem;
   background-color: #141414;
 }
 
 .service-statistics-section h2 {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: normal;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 
 .statistic-items {
@@ -455,20 +455,20 @@
 }
 
 .statistic-item {
-  margin-top: 40px;
+  margin-top: 2.5rem;
   display: inline-block;
   width: 48%;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 
 .statistic-number {
-  margin-bottom: 30px;
-  font-size: 80px;
+  margin-bottom: 1.875rem;
+  font-size: 5rem;
   color: red;
 }
 
 .vertical-line {
-  border-left: 1px solid #424242;
-  height: 135px;
-  margin: 20px 20px;
+  border-left: 0.0625rem solid #424242;
+  height: 8.4375rem;
+  margin: 1.25rem 1.25rem;
 }

@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/Bluesky303/Cat_Mint-Fans/issues"
   },
-  "homepage": "https://github.com/Bluesky303/Cat_Mint-Fans#readme"
+  "homepage": "https://github.com/Bluesky303/Cat_Mint-Fans#readme",
+  "devDependencies": {
+    "pxtorem": "^1.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1"
+  }
 }

@@ -10,23 +10,23 @@ aside {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 1.25rem;
     background-color: transparent;
     animation: sidebar-button-showup 0.5s ease-in-out;
 }
   
 #aside-collapsed {
     animation: sidebar-button-collapse 0.5s ease-in-out;
-    translate: 100px;
+    translate: 6.25rem;
 }
   
 /* 侧边栏展开收起 */
 @keyframes sidebar-button-showup {
     0% {
-      translate: 100px;
+      translate: 6.25rem;
     }
     100% {
-      translate: 0px;
+      translate: 0rem;
     }
 }
   
@@ -35,21 +35,21 @@ aside {
       translate: 0;
     }
     to {
-      translate: 100px;
+      translate: 6.25rem;
     }
 }
   
 .sidebar-button {
     display: flex;
     flex-direction: column;
-    padding: 10px 5px;
-    margin-bottom: 2px;
+    padding: 0.625rem 0.3125rem;
+    margin-bottom: 0.125rem;
     align-items: center;
     width: 100%; 
     cursor: pointer;
-    border: 1px solid transparent;
+    border: 0.0625rem solid transparent;
     color: red;
-    font-size: 12px;
+    font-size: 0.75rem;
     background-color: #242424;
     transition: all 0.3s;
 }
@@ -70,14 +70,14 @@ aside {
 }
   
 .sidebar-button-text {
-    height: 10px;
-    margin-top: 5px;
+    height: 0.625rem;
+    margin-top: 0.3125rem;
 }
   
 .OA-LOGO {
-    height: 30px;
-    width: 30px;
-    margin-right: 10px;
-    font-size: 25px;
+    height: 1.875rem;
+    width: 1.875rem;
+    margin-right: 0.625rem;
+    font-size: 1.5625rem;
     color: white
 }

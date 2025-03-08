@@ -60,3 +60,9 @@ for (let button of sidebarButton) {
     
     };
 }
+
+/*缩放函数*/
+function zoom(thing, scale, z) {
+    thing.style.transform = `scale(${scale})`;
+    thing.style.zIndex = z;
+}

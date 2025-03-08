@@ -57,13 +57,6 @@ for (let slider of sliders) {
     });
 }
 
-/*缩放函数*/
-function zoom(thing, scale, z) {
-    thing.style.transform = `scale(${scale})`;
-    thing.style.zIndex = z;
-}
-
-
 /*按钮*/
 var loginButton = document.querySelectorAll(".login-links a, .login-links nav a, .nav-links a");
 

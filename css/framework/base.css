@@ -7,12 +7,12 @@
 /* 字体设置 */
 @font-face {
   font-family: 'SourceHanSansSC-Regular';
-  src: url('./fonts/SourceHanSansSC-Regular-2.otf') format('opentype');  
+  src: url('../../fonts/SourceHanSansSC-Regular-2.otf') format('opentype');  
 }
   
 @font-face {
   font-family: 'Cambria-Math';
-  src: url('./fonts/cambria-math.ttf') format('truetype');  
+  src: url('../../fonts/cambria-math.ttf') format('truetype');  
 }
 
 body {
@@ -20,4 +20,17 @@ body {
   background-color: black;
   color: white;
 }
+
+
+@media screen and (min-width: 0px){
+  html {
+      font-size: 8px; 
+  }
   
+}
+
+@media screen and (min-width: 750px){
+  html {
+    font-size: 16px; 
+  }
+}
