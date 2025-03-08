@@ -1,92 +1,43 @@
 var http = require('http');
-
 var fs = require('fs');
-
 var url = require('url');
-
- 
+var contentType = {
+    '.html': 'text/html',
+    '.css': 'text/css',
+    '.js': 'application/javascript',
+    '.jpg': 'image/jpeg',
+    '.png': 'image/png',
+    '.gif': 'image/gif',
+    '.ico': 'image/x-icon',
+    '.txt': 'text/plain',
+    '.json': 'application/json',
+    '.xml': 'application/xml',
+    '.wav': 'audio/wav',
+    '.mp3': 'audio/mpeg',
+    '.mp4': 'video/mp4',
+    '.woff': 'application/font-woff',
+    '.ttf': 'application/font-ttf',
+    '.eot': 'application/vnd.ms-fontobject',
+    '.otf': 'application/font-otf',
+    '.svg': 'application/image/svg+xml',
+    '.wasm': 'application/wasm'
+}
 
  // 创建服务器
 
 http.createServer( function (request, response) { 
-
    // 解析请求，包括文件名
-
    var pathname = url.parse(request.url).pathname;
-
    var postfix = pathname.match(/(\.[^.]+|)$/)[0];//取得后缀名
-
    // 输出请求的文件名
-
    console.log("Request for " + pathname + " received.");
-
- 
-
-   // 从文件系统中读取请求的文件内容
-
-   fs.readFile(pathname.substr(1), function (err, data) {
-
-      if (err) {
-
-         console.log(err);
-
-        // HTTP 状态码: 404 : NOT FOUND
-
-         // Content Type: text/plain
-
-         response.writeHead(404, {'Content-Type': 'text/html; charset=utf-8'});
-
-      }else{            
-
-         // HTTP 状态码: 200 : OK
-
-         // Content Type: text/plain
-
-         console.log(postfix);
-
-         if(postfix==='html'){
-
-             response.writeHead(200, {'Content-Type': 'text/html'});   
-
-         }else if(postfix==='css'){
-
-            response.writeHead(200, {'Content-Type': 'text/css'});
-
-         }
-
-         else if(postfix==='js'){
-
-            response.writeHead(200, {'Content-Type': 'application/javascript'});
-
-         }else if(postfix==='jpg'){
-            response.writeHead(200, {'Content-Type': 'image/jpg'});
-            var imageFilePath = pathname.substr(1);
-            var stream = fs.createReadStream( imageFilePath );
-            var responseData = [];//存储文件流
-            if (stream) {//判断状态
-                stream.on( 'data', function( chunk ) {
-                    responseData.push( chunk );
-                });
-                stream.on( 'end', function() {
-                    var finalData = Buffer.concat( responseData );
-                    response.write( finalData );
-                    response.end();
-                });
-            }
-         }
-
-         // 响应文件内容
-
-         response.write(data.toString());       
-
-      }
-
-      //  发送响应数据
-
-      response.end();
-
-   });
-
+   //设置请求的返回头type,content的type类型列表见上面
+   response.setHeader("Content-Type", contentType[postfix]);
+   //格式必须为 binary 否则会出错
+   var content = fs.readFileSync(pathname.substring(1),"binary");   
+   response.writeHead(200, "Ok");
+   response.write(content,"binary"); //格式必须为 binary，否则会出错
+   response.end();
 }).listen(8080);
 
  
