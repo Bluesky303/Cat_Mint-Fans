@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: #000;
+            color: #fff;
+        }
+        .top-bar {
+            text-align: right;
+            padding: 8px 20px;
+            background: #ff0000;
+            color: #000;
+        }
+        .header {
+            background: #333;
+            border-top: 4px solid #ff0000;
+        }
+        .main-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo {
+            color: #ff0000;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+        .nav-links li {
+            list-style: none;
+        }
+        .nav-links a {
+            color: #ff0000;
+            text-decoration: none;
+        }
+        .main-content {
+            padding: 100px;
+        }
+        .app-info h1 {
+            font-size: 2.5rem;
+            color: #ff0000;
+            margin-bottom: 20px;
+        }
+        .app-info p {
+            font-size: 1.5rem;
+            color: #ff0000;
+            margin-bottom: 30px;
+        }
+        .button-group {
+            display: flex;
+            gap: 10px;
+        }
+        .download-btn {
+            background: #ff0000;
+            color: #fff;
+            padding: 10px 40px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .detail-btn {
+            background: #666;
+            color: #fff;
+            padding: 10px 40px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .footer {
+            margin-top: 20px;
+            display: flex;
+            gap: 20px;
+            font-size: 0.8rem;
+            color: #ff0000;
+        }
+    </style>
+    <title>幽冥通APP</title>
+</head>
+<body>
+    <header class="header">
+        <div class="top-bar">幽冥通OA登陆 办事服务: 登陆 | 注册</div>
+        <nav class="main-nav">
+            <div class="logo-container">
+                <span class="logo">LOGO</span>
+                <span class="platform-name">现代化地府政务服务平台</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">简介</a></li>
+                <li><a href="#">服务</a></li>
+                <li><a href="#">关于</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <div class="app-info">
+            <h1>幽冥通APP</h1>
+            <p>随时办理，方便快捷</p>
+            <div class="button-group">
+                <a href="#" class="download-btn">下载</a>
+                <a href="#" class="detail-btn">详情</a>
+            </div>
+        </div>
+        <footer class="footer">
+            <span class="version">版本号</span>
+            <span class="privacy">隐私政策</span>
+        </footer>
+    </main>
+</body>
+</html>
