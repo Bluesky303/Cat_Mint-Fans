@@ -1,7 +1,7 @@
 /* 全局样式 */
-@import './framework/base.css';
+@import '/css/framework/base.css';
 
-@import './animation/showup.css';
+@import '/css/animation/showup.css';
 * {
   margin: 0;
   padding: 0;

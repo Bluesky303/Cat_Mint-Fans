@@ -1,9 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
+/* 全局样式 */
+@import '/css/framework/base.css';
+
+@import '/css/animation/showup.css';
 
 body {
   background-color: #000;

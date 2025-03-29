@@ -1,7 +1,7 @@
 /* 全局样式 */
-@import './framework/base.css';
+@import '/css/framework/base.css';
 
-@import './animation/showup.css';
+@import '/css/animation/showup.css';
 
 /*主要内容*/
 
@@ -17,7 +17,7 @@
   padding-bottom: 2.5rem;
   font-size: 1.5rem;
   background-size: cover;
-  background-image: url("../pic/IMG_0001.jpg");
+  background-image: url("/pic/IMG_0001.jpg");
   background-position-y: center;
   animation: h-showup 2s ease-in-out;
 }
