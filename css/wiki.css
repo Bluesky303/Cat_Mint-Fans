@@ -1,8 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* 全局样式 */
+@import './framework/base.css';
+
+@import './animation/showup.css';
 
 body {
   font-family: Arial, sans-serif;
