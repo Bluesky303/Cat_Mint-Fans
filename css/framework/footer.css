@@ -1,6 +1,7 @@
 /* 底部样式 */
 footer {
-    margin-top: 1.875rem;
-    text-align: center;
-    /* ????????我喜欢你你喜欢我哇奥！！！！！！！！！*/
-  }
+  margin-top: 1.875rem;
+  text-align: center;
+  transform: translateY(-50%);
+  /* ????????我喜欢你你喜欢我哇奥！！！！！！！！！*/
+}

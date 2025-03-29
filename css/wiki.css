@@ -1,12 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* 全局样式 */
+@import '/css/framework/base.css';
+
+@import '/css/animation/showup.css';
 
 body {
   font-family: Arial, sans-serif;
-  color: red;
+  color: white;
   background-color: #222;
 }
 
