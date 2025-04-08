@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/wiki-details.css">
+    <title>现代化地府政务服务平台</title>
+
+    <script src="/js/libs/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("header").load("./framework/header.html");
+            $("aside").load("./framework/sidebar.html");
+            $("footer").load("./framework/footer.html");
+        });
+    </script>
+    <script src="/js/wiki-details.js"></script>
+</head>
+
+<header></header>
+
+<body>
+    <main>
+        <br>
+        <div class="titile">
+            <h1>这是大标题</h1>
+            <p>这是小标题</p>
+        </div>
+        <br>
+        <section class="tabs">
+            <div class="tab">
+                <button class="tablinks" data-tab="1">选项卡1</button>
+                <button class="tablinks" data-tab="2">选项卡2</button>
+                <button class="tablinks" data-tab="3">选项卡3</button>
+                <button class="tablinks" data-tab="4">选项卡4</button>
+            </div>
+        </section>
+            <div class="tab-content" id="0">点击上方按钮查看</div>
+            <div class="tab-content" id="1" style="display: none;">div内容</div>
+            <div class="tab-content" id="2" style="display: none;">div内容1</div>
+            <div class="tab-content" id="3" style="display: none;">div内容2</div>
+            <div class="tab-content" id="4" style="display: none;">div内容3</div>
+    </main>
+</body>
+<aside></aside>
+<footer></footer>
+
+</html>

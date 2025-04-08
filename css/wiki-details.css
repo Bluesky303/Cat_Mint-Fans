@@ -1,0 +1,64 @@
+/* 全局样式 */
+@import '/css/framework/base.css';
+
+@import '/css/animation/showup.css';
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fa0606;
+}
+
+.logo {
+    font-size: 18px;
+}
+
+.titile {
+    text-align: center;
+    color: red;
+    margin: 0 auto;
+}
+
+.titile h1 {
+    font-size: 50px;
+}
+
+.tabs {
+    max-width: 87.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.tab{
+    text-align: center;
+    align-items: center;
+}
+
+.tab button {
+    height: 60px;
+    width: 150px;
+    text-align: center;
+    background-color: #000;
+    color: white;
+    border: none;
+}
+
+.tab-content {
+    background-color: #242424;
+    max-width: 87.5rem;
+    margin: 0 auto;
+    text-align: center;
+    height: 2000px;
+    /* 这里先用height撑大，具体内容写上后再调 */
+}
