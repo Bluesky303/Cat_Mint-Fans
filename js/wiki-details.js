@@ -9,7 +9,7 @@ $(document).ready(function () {
         $('.tablinks').css('background-color', '');
         $('.tablinks').css('color','white')
         // 设置当前按钮的颜色
-        $(this).css('background-color', '#242424');
+        $(this).css('background-color', '#111');
         $(this).css('color','red')
         // 获取所点击按钮的自定义属性
         var tabId = $(this).data('tab'); // 使用data-tab属性获取相应的内容ID
