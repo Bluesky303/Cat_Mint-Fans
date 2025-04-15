@@ -76,4 +76,25 @@ for (let button of serviceCategoriesButton) {
     };
 }
 
+var policyBoxNow = 0;
+var policyBox = document.querySelectorAll(".policy-box");
+policyBox[policyBoxNow].id = "policy-box-active";
+$(".policy-box").eq(policyBoxNow).load("/html/framework/policy-box.html")
+for (let i = 0; i < policyBox.length; i++) {
+    box = policyBox[i];
+    box.onclick = function() {
+        if (i != policyBoxNow) {
+            $(".policy-box").eq(policyBoxNow).empty();
+            policyBox[policyBoxNow].id = "";
+            policyBoxNow = i;
+            policyBox[policyBoxNow].id = "policy-box-active";
+            setTimeout(() =>{
+                $(".policy-box").eq(policyBoxNow).load("/html/framework/policy-box.html");
+    
+            }, 300)
+        }
+        
+    };
+}
+
 // 你喜欢我我喜欢你袜奥！！！

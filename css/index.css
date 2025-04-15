@@ -166,7 +166,7 @@
   max-width: 125rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 3.125rem 1.25rem;
+  padding: 3.125rem 5.5rem;
   text-align: center;
 }
 
@@ -364,10 +364,9 @@
   max-width: 125rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 3.125rem 1.25rem;
+  padding: 3.125rem 5.5rem;
 }
 
-  
 .section-title-1{
   font-size: 2.25rem;
   font-weight: bold;
@@ -378,19 +377,6 @@
 
 .policy-interpretation {
   display: flex;
-}
-
-.show-sth{
-  width: 50%;
-  text-align: left;
-  padding: 1.25rem;
-  background-color: #242424;
-  border-radius: 0.5rem;
-
-}
-.policy-box-first{
-  margin-right: 0.5rem;
-  margin-left: 1.875rem;
 }
 
 .interpretation-box {
@@ -404,6 +390,23 @@
   margin-right: 0.625rem;
   width: 10.5%;
   height: 23.75rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#policy-box-active{
+  width: 50%;
+  text-align: left;
+  margin-right: 0.625rem;
+  padding: 1.25rem;
+  background-color: #242424;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  cursor: default;
+}
+
+#policy-showup {
+    animation: showup 0.3s ease-in-out
 }
 
 /* 特色栏目区域样式 */
