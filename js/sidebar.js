@@ -1,9 +1,21 @@
 var aside = document.querySelectorAll("aside")[0];
 var sidebarButton = document.getElementsByClassName("sidebar-button");
+var mobile = document.getElementById("mobile");
 var gotopButton = document.getElementById("sidebar-gotop");
 var endButton = document.getElementById("collapse-button");
+var feedback = document.getElementById("top-button");
 
-//回到顶部的显示或隐藏按钮
+//点击“移动端”按钮实现跳转
+mobile.addEventListener("click", function(){
+    window.location.href = "/html/app.html";
+});
+
+// 点击使用反馈按钮实现跳转
+feedback.addEventListener("click",function(){
+    window.location.href = "/html/complain.html"
+})
+
+// 回到顶部的显示或隐藏按钮
 window.onscroll = function() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         gotopButton.style.display = "flex";
