@@ -59,6 +59,58 @@ header {
     max-width: 87.5rem;
     margin: 0 auto;
     text-align: center;
-    height: 2000px;
+    
     /* 这里先用height撑大，具体内容写上后再调 */
 }
+
+.upload-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #333;
+  }
+  
+  .upload-box {
+    border: 2px dashed red;
+    padding: 50px;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  .icon-placeholder {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .download-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #333;
+  }
+  
+  .file-item {
+    border: 1px solid red;
+    padding: 15px;
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .icon {
+    margin-right: 10px;
+  }
+  
+  .file-info {
+    font-size: 12px;
+  }
+  
+  button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+  }
+  
+  
