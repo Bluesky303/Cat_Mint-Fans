@@ -142,3 +142,15 @@ h1 {
   font-size: 12px;
   padding: 10px;
 }
+
+#homepage{
+position: inherit;
+left: 5%;
+height: auto;
+bottom: 2rem;
+left: 2rem;
+}
+
+#homepage a{
+  color: red;
+}
