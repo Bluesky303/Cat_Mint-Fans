@@ -113,4 +113,147 @@ header {
     cursor: pointer;
   }
   
-  
+
+.tab.active {
+  color: red;
+  background-color: #333;
+}
+
+/* 流程部分 */
+/* 进度条部分 */
+.progress-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.progress-step {
+    flex: 1;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin: 0 10px;
+}
+
+.progress-step.active {
+    background-color: red;
+}
+
+.progress-step::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.step-line {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+.progress-step:first-child::before {
+    display: none;
+}
+
+.progress-step:first-child {
+    margin-left: 0;
+}
+
+.progress-step:last-child {
+    margin-right: 0;
+}
+
+.progress-step.active + .progress-step::before {
+    background-color: red;
+}
+
+
+/* 内容部分 */
+.content-section {
+  margin-bottom: 20px;
+}
+
+.content-section h2 {
+  text-align: center;
+  color: red;
+  font-size: 20px;
+}
+
+.content-section h3 {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
+
+.content-section p {
+  margin-top: 10px;
+  color: white;
+}
+
+/* 表格部分 */
+.table-section {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table td {
+  border: 2px solid red;
+  padding: 10px;
+  text-align: center;
+}
+
+/* 按钮部分 */
+.button-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  margin: 0 auto;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.button:hover {
+  background-color: #ff4d4d;
+}
+
+/* 链接部分 */
+.link-section {
+  text-align: center;
+}
+
+.link-section a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.content-container {
+  background-color: #333;
+}

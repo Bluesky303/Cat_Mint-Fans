@@ -2,98 +2,192 @@
 <html lang="zh-CN">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/wiki-details.css">
-    <title>现代化地府政务服务平台</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/wiki-details.css">
+  <title>现代化地府政务服务平台</title>
 
-    <script src="/js/libs/jquery-3.7.1.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("header").load("./framework/header.html");
-            $("aside").load("./framework/sidebar.html");
-            $("footer").load("./framework/footer.html");
-        });
-    </script>
-    <script src="/js/wiki-details.js"></script>
+  <script src="/js/libs/jquery-3.7.1.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("header").load("./framework/header.html");
+      $("aside").load("./framework/sidebar.html");
+      $("footer").load("./framework/footer.html");
+    });
+  </script>
+  <script src="/js/wiki-details.js"></script>
 </head>
 
 <header></header>
 
 <body>
-    <main>
-        <br>
-        <div class="titile">
-            <h1>这是大标题</h1>
-            <p>这是小标题</p>
+  <main>
+    <br>
+    <div class="titile">
+      <h1>这是大标题</h1>
+      <p>这是小标题</p>
+    </div>
+    <br>
+    <section class="tabs">
+      <div class="tab">
+        <button class="tablinks" data-tab="1">文件信息</button>
+        <button class="tablinks" data-tab="2">流程</button>
+        <button class="tablinks" data-tab="3">选项卡3</button>
+        <button class="tablinks" data-tab="4">选项卡4</button>
+      </div>
+    </section>
+    <div class="tab-content" id="0"><div class="content-container">
+      <section class="process-section">
+    <h2>流程类</h2>
+    <div class="progress-bar">
+        <div class="progress-step active"></div>
+        <div class="progress-step active"></div>
+        <div class="progress-step active"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+    </div>
+</section>
+
+
+      <section class="content-section">
+        <h2>一级标题题题题题题题题题题题题</h2>
+        <h3>二级标题</h3>
+        <p>
+          正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+        </p>
+      </section>
+
+      <section class="table-section">
+        <table>
+          <tr>
+            <td>表格</td>
+            <td>表格</td>
+            <td>表格</td>
+            <td>表格</td>
+            <td>表格</td>
+          </tr>
+          <tr>
+            <td>表格</td>
+            <td>表格</td>
+            <td>表格</td>
+            <td>表格</td>
+            <td>表格</td>
+          </tr>
+          <tr>
+            <td>表格</td>
+            <td>表格</td>
+            <td>表格</td>
+            <td>表格</td>
+            <td>表格</td>
+          </tr>
+          <tr>
+            <td>表格</td>
+            <td>表格</td>
+            <td>表格</td>
+            <td>表格</td>
+            <td>表格</td>
+          </tr>
+          <tr>
+            <td>表格</td>
+            <td>表格</td>
+            <td>表格</td>
+            <td>表格</td>
+            <td>表格</td>
+          </tr>
+          <tr>
+            <td>表格</td>
+            <td>表格</td>
+            <td>表格</td>
+            <td>表格</td>
+            <td>表格</td>
+          </tr>
+          <tr>
+            <td>表格</td>
+            <td>表格</td>
+            <td>表格</td>
+            <td>表格</td>
+            <td>表格</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="button-section">
+        <div class="button-container">
+          <button class="button">按钮标题</button>
+          <button class="button">按钮标题</button>
         </div>
-        <br>
-        <section class="tabs">
-            <div class="tab">
-                <button class="tablinks" data-tab="1">选项卡1</button>
-                <button class="tablinks" data-tab="2">选项卡2</button>
-                <button class="tablinks" data-tab="3">选项卡3</button>
-                <button class="tablinks" data-tab="4">选项卡4</button>
-            </div>
-        </section>
-            <div class="tab-content" id="0">点击上方按钮查看</div>
-            <div class="tab-content" id="1" style="display: none;"><section class="upload-section">
-                <h2>提交上传文件</h2>
-                <p>二级标题</p>
-                <div class="upload-box">
-                  <div class="icon-placeholder">此处放图标</div>
-                  <p>在此处上传文件</p>
-                  <p>如需求等</p>
-                </div>
-              </section>
-              <section class="download-section">
-                <h2>下载附件文件</h2>
-                <p>二级标题</p>
-                <div class="file-item">
-                  <span class="icon">图标</span>
-                  <span class="file-name">此处为文件名称</span>
-                  <div class="file-info">
-                    <span class="file-size">文件大小</span>
-                    <span class="file-version">文件版本</span>
-                    <span class="file-description">文件说明</span>
-                  </div>
-                  <button>下载文件</button>
-                </div>
-                <div class="file-item">
-                  <span class="icon">图标</span>
-                  <span class="file-name">此处为文件名称</span>
-                  <div class="file-info">
-                    <span class="file-size">文件大小</span>
-                    <span class="file-version">文件版本</span>
-                    <span class="file-description">文件说明</span>
-                  </div>
-                  <button>下载文件</button>
-                </div>
-                <div class="file-item">
-                  <span class="icon">图标</span>
-                  <span class="file-name">此处为文件名称</span>
-                  <div class="file-info">
-                    <span class="file-size">文件大小</span>
-                    <span class="file-version">文件版本</span>
-                    <span class="file-description">文件说明</span>
-                  </div>
-                  <button>下载文件</button>
-                </div>
-                <div class="file-item">
-                  <span class="icon">图标</span>
-                  <span class="file-name">此处为文件名称</span>
-                  <div class="file-info">
-                    <span class="file-size">文件大小</span>
-                    <span class="file-version">文件版本</span>
-                    <span class="file-description">文件说明</span>
-                  </div>
-                  <button>下载文件</button>
-                </div>
-              </section></div>
-            <div class="tab-content" id="2" style="display: none;">div内容1</div>
-            <div class="tab-content" id="3" style="display: none;">div内容2</div>
-            <div class="tab-content" id="4" style="display: none;">div内容3</div>
-    </main>
+      </section>
+
+      <section class="link-section">
+        <p>相关链接：</p>
+        <a href="#">链接1</a>
+        <a href="#">链接2</a>
+        <a href="#">链接3</a>
+      </section>
+    </div>
+</div>
+    <div class="tab-content" id="1" style="display: none;">
+      <section class="upload-section">
+        <h2>提交上传文件</h2>
+        <p>二级标题</p>
+        <div class="upload-box">
+          <div class="icon-placeholder">此处放图标</div>
+          <p>在此处上传文件</p>
+          <p>如需求等</p>
+        </div>
+      </section>
+      <section class="download-section">
+        <h2>下载附件文件</h2>
+        <p>二级标题</p>
+        <div class="file-item">
+          <span class="icon">图标</span>
+          <span class="file-name">此处为文件名称</span>
+          <div class="file-info">
+            <span class="file-size">文件大小</span>
+            <span class="file-version">文件版本</span>
+            <span class="file-description">文件说明</span>
+          </div>
+          <button>下载文件</button>
+        </div>
+        <div class="file-item">
+          <span class="icon">图标</span>
+          <span class="file-name">此处为文件名称</span>
+          <div class="file-info">
+            <span class="file-size">文件大小</span>
+            <span class="file-version">文件版本</span>
+            <span class="file-description">文件说明</span>
+          </div>
+          <button>下载文件</button>
+        </div>
+        <div class="file-item">
+          <span class="icon">图标</span>
+          <span class="file-name">此处为文件名称</span>
+          <div class="file-info">
+            <span class="file-size">文件大小</span>
+            <span class="file-version">文件版本</span>
+            <span class="file-description">文件说明</span>
+          </div>
+          <button>下载文件</button>
+        </div>
+        <div class="file-item">
+          <span class="icon">图标</span>
+          <span class="file-name">此处为文件名称</span>
+          <div class="file-info">
+            <span class="file-size">文件大小</span>
+            <span class="file-version">文件版本</span>
+            <span class="file-description">文件说明</span>
+          </div>
+          <button>下载文件</button>
+        </div>
+      </section>
+    </div>
+    <div class="tab-content" id="2" style="display: none;">
+      
+      <div class="progress"></div>
+    </div>
+    <div class="tab-content" id="3" style="display: none;">div内容2</div>
+    <div class="tab-content" id="4" style="display: none;">div内容3</div>
+  </main>
 </body>
 <aside></aside>
 <footer></footer>
