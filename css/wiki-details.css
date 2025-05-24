@@ -124,35 +124,44 @@ header {
 .progress-bar {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 10px;
     margin-top: 20px;
-    width: 100%;
+    width: 96%;
 }
 
 .progress-step {
-    flex: 1;
+    flex:  0 0 auto;
     position: relative;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #ddd;
-    margin: 0 10px;
+    width: 10rem;
+    height: 50px;
+    background-color: #656565;
+    clip-path: polygon(0 0, 80% 0, 100% 50%, 80% 100%, 0 100%, 20% 50%);
+
 }
 
-.progress-step.active {
-    background-color: red;
+.pro-font {
+  position: absolute; /* 绝对定位以便居中 */
+  top: 50%; /* 垂直居中 */
+  left: 50%; /* 水平居中 */
+  transform: translate(-50%, -50%); /* 修正偏移 */
+  width: 30px; /* 圆圈的宽度 */
+  height: 30px; /* 圆圈的高度 */
+  line-height: 30px; /* 文字垂直居中 */
+  text-align: center; /* 文字水平居中 */
+  background: linear-gradient(45deg, rgb(255, 0, 43), rgb(218, 193, 191)); /* 渐变背景色 */
+  border-radius: 50%; /* 圆形 */
+  color: rgb(255, 255, 255); /* 文字颜色 */
+  font-weight: bold; /* 文字加粗 */
+  font-size: 16px; /* 文字大小 */
 }
 
-.progress-step::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: white;
+.progress-step:nth-child(-n+3) {
+  padding: 0%;
+  background-color: rgb(255, 0, 0);
 }
+
 
 .step-line {
     position: absolute;
